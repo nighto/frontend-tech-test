@@ -1,7 +1,12 @@
 'use strict';
 
+const cors = require('cors');
+
 const app = require('express')();
 const tasksContainer = require('./tasks.json');
+
+// let CORS calls
+app.use(cors());
 
 /**
  * GET /tasks
@@ -137,5 +142,5 @@ app.delete('/task/delete/:id', (req, res) => {
 });
 
 app.listen(9001, () => {
-  process.stdout.write('the server is available on http://localhost:9001/\n');
+  process.stdout.write('Backend server is available on http://localhost:9001/\n');
 });
