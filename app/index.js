@@ -10,7 +10,6 @@ const store = configureStore();
 
 // fetch initial todo list
 const getTasksCallback = (data) => {
-    console.log('getTasksCallback', data);
     store.dispatch(getTasks(data));
 };
 api.getTasks(getTasksCallback);

@@ -10,7 +10,9 @@ const api = {
                 callback(response.data);
             })
             .catch((error) => {
-                return console.log(error);
+                // TODO treat loading error
+                throw error;
+                // return console.log(error);
             })
         ;
     }

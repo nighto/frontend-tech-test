@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Item = ({data}) =>
-    <li>{data}</li>;
+const Item = ({task}) => {
+    return (
+        <li>
+            <strong>{task.title}</strong><br />
+            {task.description}
+        </li>
+    );
+};
 
 Item.propTypes = {
-    data: PropTypes.object
+    task: PropTypes.object
 };
 
 export default Item;
