@@ -8,7 +8,7 @@ const App = () =>
         <h1>Travix Test - To Do List</h1>
         { Routes }
         <footer className={footer}>
-            <Link to="/">Filterable Table</Link>
+            <Link to="/">To Do List</Link>
             <Link to="/about">About</Link>
         </footer>
     </div>;

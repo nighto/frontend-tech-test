@@ -6,7 +6,18 @@ const appReducer = (state = {}, action) => {
     switch (action.type) {
         case types.GET_TASKS:
             return {
-                tasks: action.data.tasks
+                ...state,
+                tasks: action.data.tasks,
+            };
+        case types.SHOW_NEW_TASK:
+            return {
+                ...state,
+                showNewTask: true,
+            };
+        case types.HIDE_NEW_TASK:
+            return {
+                ...state,
+                showNewTask: false,
             };
         default:
             return state;
