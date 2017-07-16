@@ -1,16 +1,13 @@
 import React from 'react';
 
 const About = () =>
-    <div>
-        Hey! Thanks for using this example. If you like it, consider starring the repo :))
-        <div>
-            <iframe
-                src="https://ghbtns.com/github-btn.html?user=jpsierens&repo=webpack-react-redux&type=star&size=large"
-                frameBorder="0"
-                allowTransparency="true"
-                scrolling="0">
-            </iframe>
+    <div className="clearfix">
+        <div className="pull-left">
+            <img src="https://pt.gravatar.com/userimage/2071109/7d268dd58d13590ff6fcc2abbe8d1415.jpg" alt="Profile picture" style={{marginRight: '10px', borderRadius: '10px'}}/>
         </div>
+        <p>Thanks for checking out my application.</p>
+        <p>Done by Arlindo Pereira.</p>
+        <p>Check my profile page on <a href="//github.com/nighto">GitHub</a></p>
     </div>;
 
 
